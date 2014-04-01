@@ -21,14 +21,12 @@
 #import <Cordova/CDVInvokedUrlCommand.h>
 
 @interface CDVStatusBar : CDVPlugin {
-    @protected
+@protected
     BOOL _statusBarOverlaysWebView;
-    @protected
+@protected
     UIView* _statusBarBackgroundView;
-    @protected
+@protected
     BOOL _uiviewControllerBasedStatusBarAppearance;
-    @protected
-    UIColor* _statusBarBackgroundColor;
 }
 
 @property (atomic, assign) BOOL statusBarOverlaysWebView;
@@ -45,7 +43,7 @@
 
 - (void) hide:(CDVInvokedUrlCommand*)command;
 - (void) show:(CDVInvokedUrlCommand*)command;
-    
+
 - (void) _ready:(CDVInvokedUrlCommand*)command;
 
 @end
